@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://c0tiawwfqbpa3"]
+
+[ext_resource type="Script" uid="uid://c6fgiufokwvhk" path="res://control.gd" id="1_0fbet"]
+
+[node name="Control" type="Control" unique_id=28467232]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="Button" type="Button" parent="." unique_id=89352533]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "aaaaa
+aaaaa"
+
+[node name="CheckBox" type="CheckBox" parent="." unique_id=810193796]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -24.0
+offset_bottom = 24.0
+grow_horizontal = 0
+button_pressed = true
+text = "yayayay"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

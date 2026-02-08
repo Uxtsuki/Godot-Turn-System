@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c3e1sb1qjefn1"]
+
+[ext_resource type="Script" uid="uid://ctt4hurkaxg4s" path="res://node_2d.gd" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D" unique_id=1558882000]
+script = ExtResource("1_wtcfe")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1010320388]
+
+[node name="ButtonChangeTurn" type="Button" parent="CanvasLayer" unique_id=1706940384]
+visible = false
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_top = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Change Turn"
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1209545445]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "0"
+
+[node name="Label2" type="Label" parent="CanvasLayer" unique_id=579953613]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+text = "0"
+horizontal_alignment = 2
+
+[connection signal="pressed" from="CanvasLayer/ButtonChangeTurn" to="." method="_change_turn"]
